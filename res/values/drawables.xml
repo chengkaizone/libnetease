@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <item type="drawable" name="transparent">#00000000</item>
+    <item type="drawable" name="menu_left_bg">#22c85555</item>
+    
+</resources>

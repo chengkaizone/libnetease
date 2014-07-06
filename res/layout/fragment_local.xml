@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title_bar" />
+
+    <TextView
+        android:id="@+id/local_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="本地"
+        android:textColor="#ff000000"
+        android:textSize="20sp" />
+
+</LinearLayout>

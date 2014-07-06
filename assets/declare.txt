@@ -1,0 +1,9 @@
+//计算游标X轴到达的距离
+			int offsetValue = 2 * offset + cursorWidth;
+			//偏移的item数
+			int offsetCount=position-originalIndex;
+			if(offsetCount>0){
+				animation = new TranslateAnimation(0, offsetCount*offsetValue, 0, 0);
+			}else{
+				animation = new TranslateAnimation(offsetCount*offsetValue, 0, 0, 0);
+			}

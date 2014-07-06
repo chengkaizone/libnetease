@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_slidingmenu_left"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="60dp" >
+    
+    <LinearLayout
+        android:id="@+id/menu_news"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="50dp"
+        android:background="@drawable/menu_left_selector"
+         >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/biz_navigation_tab_news" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新闻"
+            android:textColor="#99ffffff"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/menu_read"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="50dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/menu_left_selector"
+         >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/biz_navigation_tab_read" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订阅"
+            android:textColor="#99ffffff"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/menu_local_news"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="50dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/menu_left_selector"
+         >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/biz_navigation_tab_local_news" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本地"
+            android:textColor="#99ffffff"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+   
+    <LinearLayout
+        android:id="@+id/menu_ties"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="50dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/menu_left_selector"
+         >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/biz_navigation_tab_ties" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跟帖"
+            android:textColor="#99ffffff"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_pics"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="50dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/menu_left_selector"
+         >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/biz_navigation_tab_pics" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片"
+            android:textColor="#99ffffff"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

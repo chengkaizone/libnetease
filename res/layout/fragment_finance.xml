@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ptrlv_finance"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/listview_selector" 
+        android:divider="@drawable/divider"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrHeaderTextColor="@color/black_light"
+        ptr:ptrHeaderSubTextColor="@color/black_light"
+        ptr:ptrAnimationStyle="flip" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="menu_left_selected">#22c85555</color>
+    
+    <color name="black_opca">#84000000</color>
+    <color name="list_selected">#eeeeee</color>
+    <color name="tab_text_highlight">#008cd7</color>
+    <color name="top_bar_color">#008bd6</color>
+    <color name="green_a">#32bb6b</color>
+    
+    <color name="bigbtn_color">#85c225</color>
+    <color name="bigbtn_highlight_color">#65c225</color>
+    <color name="bigbtn_ds_color">#ffcccccc</color>
+    <color name="red_1">#f06000</color>
+    <color name="blue_1">#2faee0</color>
+    <color name="black_1">#828282</color>
+    
+    <color name="query_panel_bg">#ff62b7b4</color>
+    <color name="translucent_20">#20000000</color>
+    <color name="translucent_00">#00000000</color>
+    <color name="eclipe_editor_bg">#fffefad5</color>
+    <color name="copyright_color">#ff847d7d</color>
+    <color name="white">#ffffffff</color>
+	<color name="black">#ff000000</color>
+	<color name="black_light">#ff333333</color>
+	<color name="black_light_2">#ff444444</color>
+	<color name="gray_blue">#ffdffdfa</color>
+	<color name="light_blue">#ffd9f0fe</color>
+	<color name="dark_blue">#ff40b9ff</color>
+	<color name="light_dark_blue">#9940b9ff</color>
+ 	<color name="light_orange">#99ff4400</color>
+	<color name="light_black">#cc000000</color>
+	<color name="red">#ffff0000</color>
+	<color name="blue">#ff0000ff</color>
+	<color name="green">#ff00ff00</color>
+	<color name="transparent">#00000000</color>
+	<color name="gray">#ff808080</color>
+	<color name="gray_white">#ffecedee</color>
+	
+	
+	<color name="global_background">#ffffff</color>
+	
+</resources>

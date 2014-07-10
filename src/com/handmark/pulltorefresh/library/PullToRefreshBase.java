@@ -1090,15 +1090,15 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 		mTouchSlop = config.getScaledTouchSlop();
 
 		// Styleables from XML
-		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.PullToRefresh);
+		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.libPullToRefresh);
 
-		if (a.hasValue(R.styleable.PullToRefresh_ptrMode)) {
-			mMode = Mode.mapIntToValue(a.getInteger(R.styleable.PullToRefresh_ptrMode, 0));
+		if (a.hasValue(R.styleable.libPullToRefresh_ptrMode)) {
+			mMode = Mode.mapIntToValue(a.getInteger(R.styleable.libPullToRefresh_ptrMode, 0));
 		}
 
-		if (a.hasValue(R.styleable.PullToRefresh_ptrAnimationStyle)) {
+		if (a.hasValue(R.styleable.libPullToRefresh_ptrAnimationStyle)) {
 			mLoadingAnimationStyle = AnimationStyle.mapIntToValue(a.getInteger(
-					R.styleable.PullToRefresh_ptrAnimationStyle, 0));
+					R.styleable.libPullToRefresh_ptrAnimationStyle, 0));
 		}
 
 		// Refreshable View
@@ -1113,26 +1113,26 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 		/**
 		 * Styleables from XML
 		 */
-		if (a.hasValue(R.styleable.PullToRefresh_ptrRefreshableViewBackground)) {
-			Drawable background = a.getDrawable(R.styleable.PullToRefresh_ptrRefreshableViewBackground);
+		if (a.hasValue(R.styleable.libPullToRefresh_ptrRefreshableViewBackground)) {
+			Drawable background = a.getDrawable(R.styleable.libPullToRefresh_ptrRefreshableViewBackground);
 			if (null != background) {
 				mRefreshableView.setBackgroundDrawable(background);
 			}
-		} else if (a.hasValue(R.styleable.PullToRefresh_ptrAdapterViewBackground)) {
+		} else if (a.hasValue(R.styleable.libPullToRefresh_ptrAdapterViewBackground)) {
 			Utils.warnDeprecation("ptrAdapterViewBackground", "ptrRefreshableViewBackground");
-			Drawable background = a.getDrawable(R.styleable.PullToRefresh_ptrAdapterViewBackground);
+			Drawable background = a.getDrawable(R.styleable.libPullToRefresh_ptrAdapterViewBackground);
 			if (null != background) {
 				mRefreshableView.setBackgroundDrawable(background);
 			}
 		}
 
-		if (a.hasValue(R.styleable.PullToRefresh_ptrOverScroll)) {
-			mOverScrollEnabled = a.getBoolean(R.styleable.PullToRefresh_ptrOverScroll, true);
+		if (a.hasValue(R.styleable.libPullToRefresh_ptrOverScroll)) {
+			mOverScrollEnabled = a.getBoolean(R.styleable.libPullToRefresh_ptrOverScroll, true);
 		}
 
-		if (a.hasValue(R.styleable.PullToRefresh_ptrScrollingWhileRefreshingEnabled)) {
+		if (a.hasValue(R.styleable.libPullToRefresh_ptrScrollingWhileRefreshingEnabled)) {
 			mScrollingWhileRefreshingEnabled = a.getBoolean(
-					R.styleable.PullToRefresh_ptrScrollingWhileRefreshingEnabled, false);
+					R.styleable.libPullToRefresh_ptrScrollingWhileRefreshingEnabled, false);
 		}
 
 		// Let the derivative classes have a go at handling attributes, then

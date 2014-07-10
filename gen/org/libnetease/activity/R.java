@@ -302,11 +302,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int activity_horizontal_margin=0x7f060000;
         public static final int activity_vertical_margin=0x7f060001;
-        public static final int header_footer_left_right_padding=0x7f060009;
-        public static final int header_footer_top_bottom_padding=0x7f06000a;
-        public static final int indicator_corner_radius=0x7f060007;
-        public static final int indicator_internal_padding=0x7f060008;
-        public static final int indicator_right_padding=0x7f060006;
+        public static final int libheader_footer_left_right_padding=0x7f060009;
+        public static final int libheader_footer_top_bottom_padding=0x7f06000a;
+        public static final int libindicator_corner_radius=0x7f060007;
+        public static final int libindicator_internal_padding=0x7f060008;
+        public static final int libindicator_right_padding=0x7f060006;
         public static final int padding=0x7f060002;
         public static final int slidingmenu_offset=0x7f060004;
         public static final int slidingmenu_offset2=0x7f060005;
@@ -364,8 +364,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int fl_inner=0x7f070024;
         public static final int flip=0x7f070008;
         public static final int fullscreen=0x7f07000f;
-        public static final int gridview=0x7f070009;
         public static final int left=0x7f07000c;
+        public static final int libgridview=0x7f070009;
+        public static final int libscrollview=0x7f07000b;
+        public static final int libselected_view=0x7f070010;
+        public static final int libwebview=0x7f07000a;
         public static final int local_content=0x7f07001b;
         public static final int login_title=0x7f070011;
         public static final int manualOnly=0x7f070004;
@@ -400,8 +403,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int right_login=0x7f070038;
         public static final int rlAdv=0x7f07002c;
         public static final int rotate=0x7f070007;
-        public static final int scrollview=0x7f07000b;
-        public static final int selected_view=0x7f070010;
         public static final int slidingmenu_content=0x7f07002f;
         public static final int slidingmenu_left=0x7f070030;
         public static final int slidingmenu_right=0x7f070036;
@@ -415,7 +416,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int user_head=0x7f070037;
         public static final int viewGroup=0x7f07002e;
         public static final int vpAdv=0x7f07002d;
-        public static final int webview=0x7f07000a;
     }
     public static final class layout {
         public static final int act_login=0x7f030000;
@@ -453,15 +453,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int finance=0x7f08000b;
         public static final int head_lines=0x7f080009;
         public static final int hello_world=0x7f080008;
+        public static final int libpull_to_refresh_pull_label=0x7f080000;
+        public static final int libpull_to_refresh_refreshing_label=0x7f080002;
+        public static final int libpull_to_refresh_release_label=0x7f080001;
         public static final int loading=0x7f08000c;
         /**  Just use standard Pull Down String when pulling up. These can be set for languages which require it 
          */
         public static final int pull_to_refresh_from_bottom_pull_label=0x7f080003;
         public static final int pull_to_refresh_from_bottom_refreshing_label=0x7f080005;
         public static final int pull_to_refresh_from_bottom_release_label=0x7f080004;
-        public static final int pull_to_refresh_pull_label=0x7f080000;
-        public static final int pull_to_refresh_refreshing_label=0x7f080002;
-        public static final int pull_to_refresh_release_label=0x7f080001;
     }
     public static final class style {
         /** 
@@ -481,55 +481,55 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int AppTheme=0x7f090001;
     }
     public static final class styleable {
-        /** Attributes that can be used with a PullToRefresh.
+        /** Attributes that can be used with a libPullToRefresh.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrAdapterViewBackground org.libnetease.activity:ptrAdapterViewBackground}</code></td><td> BELOW HERE ARE DEPRECEATED.</td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrAnimationStyle org.libnetease.activity:ptrAnimationStyle}</code></td><td> Style of Animation should be used displayed when pulling.</td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrDrawable org.libnetease.activity:ptrDrawable}</code></td><td> Drawable to use as Loading Indicator.</td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrDrawableBottom org.libnetease.activity:ptrDrawableBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrDrawableEnd org.libnetease.activity:ptrDrawableEnd}</code></td><td> Drawable to use as Loading Indicator in the Footer View.</td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrDrawableStart org.libnetease.activity:ptrDrawableStart}</code></td><td> Drawable to use as Loading Indicator in the Header View.</td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrDrawableTop org.libnetease.activity:ptrDrawableTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrHeaderBackground org.libnetease.activity:ptrHeaderBackground}</code></td><td> A drawable to use as the background of the Header and Footer Loading Views </td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrHeaderSubTextColor org.libnetease.activity:ptrHeaderSubTextColor}</code></td><td> Text Color of the Header and Footer Loading Views Sub Header </td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrHeaderTextAppearance org.libnetease.activity:ptrHeaderTextAppearance}</code></td><td> Base text color, typeface, size, and style for Header and Footer Loading Views </td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrHeaderTextColor org.libnetease.activity:ptrHeaderTextColor}</code></td><td> Text Color of the Header and Footer Loading Views </td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrListViewExtrasEnabled org.libnetease.activity:ptrListViewExtrasEnabled}</code></td><td>
+           <tr><td><code>{@link #libPullToRefresh_ptrAdapterViewBackground org.libnetease.activity:ptrAdapterViewBackground}</code></td><td> BELOW HERE ARE DEPRECEATED.</td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrAnimationStyle org.libnetease.activity:ptrAnimationStyle}</code></td><td> Style of Animation should be used displayed when pulling.</td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrDrawable org.libnetease.activity:ptrDrawable}</code></td><td> Drawable to use as Loading Indicator.</td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrDrawableBottom org.libnetease.activity:ptrDrawableBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrDrawableEnd org.libnetease.activity:ptrDrawableEnd}</code></td><td> Drawable to use as Loading Indicator in the Footer View.</td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrDrawableStart org.libnetease.activity:ptrDrawableStart}</code></td><td> Drawable to use as Loading Indicator in the Header View.</td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrDrawableTop org.libnetease.activity:ptrDrawableTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrHeaderBackground org.libnetease.activity:ptrHeaderBackground}</code></td><td> A drawable to use as the background of the Header and Footer Loading Views </td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrHeaderSubTextColor org.libnetease.activity:ptrHeaderSubTextColor}</code></td><td> Text Color of the Header and Footer Loading Views Sub Header </td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrHeaderTextAppearance org.libnetease.activity:ptrHeaderTextAppearance}</code></td><td> Base text color, typeface, size, and style for Header and Footer Loading Views </td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrHeaderTextColor org.libnetease.activity:ptrHeaderTextColor}</code></td><td> Text Color of the Header and Footer Loading Views </td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrListViewExtrasEnabled org.libnetease.activity:ptrListViewExtrasEnabled}</code></td><td>
         	Whether PullToRefreshListView has it's extras enabled.</td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrMode org.libnetease.activity:ptrMode}</code></td><td> Mode of Pull-to-Refresh that should be used </td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrOverScroll org.libnetease.activity:ptrOverScroll}</code></td><td> Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh.</td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrRefreshableViewBackground org.libnetease.activity:ptrRefreshableViewBackground}</code></td><td> A drawable to use as the background of the Refreshable View </td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrRotateDrawableWhilePulling org.libnetease.activity:ptrRotateDrawableWhilePulling}</code></td><td>
+           <tr><td><code>{@link #libPullToRefresh_ptrMode org.libnetease.activity:ptrMode}</code></td><td> Mode of Pull-to-Refresh that should be used </td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrOverScroll org.libnetease.activity:ptrOverScroll}</code></td><td> Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh.</td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrRefreshableViewBackground org.libnetease.activity:ptrRefreshableViewBackground}</code></td><td> A drawable to use as the background of the Refreshable View </td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrRotateDrawableWhilePulling org.libnetease.activity:ptrRotateDrawableWhilePulling}</code></td><td>
         	Whether the Drawable should be continually rotated as you pull.</td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrScrollingWhileRefreshingEnabled org.libnetease.activity:ptrScrollingWhileRefreshingEnabled}</code></td><td> Whether the user can scroll while the View is Refreshing </td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrShowIndicator org.libnetease.activity:ptrShowIndicator}</code></td><td> Whether the Indicator overlay(s) should be used </td></tr>
-           <tr><td><code>{@link #PullToRefresh_ptrSubHeaderTextAppearance org.libnetease.activity:ptrSubHeaderTextAppearance}</code></td><td> Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header </td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrScrollingWhileRefreshingEnabled org.libnetease.activity:ptrScrollingWhileRefreshingEnabled}</code></td><td> Whether the user can scroll while the View is Refreshing </td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrShowIndicator org.libnetease.activity:ptrShowIndicator}</code></td><td> Whether the Indicator overlay(s) should be used </td></tr>
+           <tr><td><code>{@link #libPullToRefresh_ptrSubHeaderTextAppearance org.libnetease.activity:ptrSubHeaderTextAppearance}</code></td><td> Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header </td></tr>
            </table>
-           @see #PullToRefresh_ptrAdapterViewBackground
-           @see #PullToRefresh_ptrAnimationStyle
-           @see #PullToRefresh_ptrDrawable
-           @see #PullToRefresh_ptrDrawableBottom
-           @see #PullToRefresh_ptrDrawableEnd
-           @see #PullToRefresh_ptrDrawableStart
-           @see #PullToRefresh_ptrDrawableTop
-           @see #PullToRefresh_ptrHeaderBackground
-           @see #PullToRefresh_ptrHeaderSubTextColor
-           @see #PullToRefresh_ptrHeaderTextAppearance
-           @see #PullToRefresh_ptrHeaderTextColor
-           @see #PullToRefresh_ptrListViewExtrasEnabled
-           @see #PullToRefresh_ptrMode
-           @see #PullToRefresh_ptrOverScroll
-           @see #PullToRefresh_ptrRefreshableViewBackground
-           @see #PullToRefresh_ptrRotateDrawableWhilePulling
-           @see #PullToRefresh_ptrScrollingWhileRefreshingEnabled
-           @see #PullToRefresh_ptrShowIndicator
-           @see #PullToRefresh_ptrSubHeaderTextAppearance
+           @see #libPullToRefresh_ptrAdapterViewBackground
+           @see #libPullToRefresh_ptrAnimationStyle
+           @see #libPullToRefresh_ptrDrawable
+           @see #libPullToRefresh_ptrDrawableBottom
+           @see #libPullToRefresh_ptrDrawableEnd
+           @see #libPullToRefresh_ptrDrawableStart
+           @see #libPullToRefresh_ptrDrawableTop
+           @see #libPullToRefresh_ptrHeaderBackground
+           @see #libPullToRefresh_ptrHeaderSubTextColor
+           @see #libPullToRefresh_ptrHeaderTextAppearance
+           @see #libPullToRefresh_ptrHeaderTextColor
+           @see #libPullToRefresh_ptrListViewExtrasEnabled
+           @see #libPullToRefresh_ptrMode
+           @see #libPullToRefresh_ptrOverScroll
+           @see #libPullToRefresh_ptrRefreshableViewBackground
+           @see #libPullToRefresh_ptrRotateDrawableWhilePulling
+           @see #libPullToRefresh_ptrScrollingWhileRefreshingEnabled
+           @see #libPullToRefresh_ptrShowIndicator
+           @see #libPullToRefresh_ptrSubHeaderTextAppearance
          */
-        public static final int[] PullToRefresh = {
+        public static final int[] libPullToRefresh = {
             0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
             0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
             0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
@@ -549,7 +549,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrAdapterViewBackground
         */
-        public static final int PullToRefresh_ptrAdapterViewBackground = 16;
+        public static final int libPullToRefresh_ptrAdapterViewBackground = 16;
         /**
           <p>
           @attr description
@@ -568,7 +568,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrAnimationStyle
         */
-        public static final int PullToRefresh_ptrAnimationStyle = 12;
+        public static final int libPullToRefresh_ptrAnimationStyle = 12;
         /**
           <p>
           @attr description
@@ -580,17 +580,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrDrawable
         */
-        public static final int PullToRefresh_ptrDrawable = 6;
+        public static final int libPullToRefresh_ptrDrawable = 6;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#ptrDrawableBottom}
-          attribute's value can be found in the {@link #PullToRefresh} array.
+          attribute's value can be found in the {@link #libPullToRefresh} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name org.libnetease.activity:ptrDrawableBottom
         */
-        public static final int PullToRefresh_ptrDrawableBottom = 18;
+        public static final int libPullToRefresh_ptrDrawableBottom = 18;
         /**
           <p>
           @attr description
@@ -602,7 +602,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrDrawableEnd
         */
-        public static final int PullToRefresh_ptrDrawableEnd = 8;
+        public static final int libPullToRefresh_ptrDrawableEnd = 8;
         /**
           <p>
           @attr description
@@ -614,17 +614,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrDrawableStart
         */
-        public static final int PullToRefresh_ptrDrawableStart = 7;
+        public static final int libPullToRefresh_ptrDrawableStart = 7;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#ptrDrawableTop}
-          attribute's value can be found in the {@link #PullToRefresh} array.
+          attribute's value can be found in the {@link #libPullToRefresh} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name org.libnetease.activity:ptrDrawableTop
         */
-        public static final int PullToRefresh_ptrDrawableTop = 17;
+        public static final int libPullToRefresh_ptrDrawableTop = 17;
         /**
           <p>
           @attr description
@@ -638,7 +638,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrHeaderBackground
         */
-        public static final int PullToRefresh_ptrHeaderBackground = 1;
+        public static final int libPullToRefresh_ptrHeaderBackground = 1;
         /**
           <p>
           @attr description
@@ -652,7 +652,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrHeaderSubTextColor
         */
-        public static final int PullToRefresh_ptrHeaderSubTextColor = 3;
+        public static final int libPullToRefresh_ptrHeaderSubTextColor = 3;
         /**
           <p>
           @attr description
@@ -664,7 +664,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrHeaderTextAppearance
         */
-        public static final int PullToRefresh_ptrHeaderTextAppearance = 10;
+        public static final int libPullToRefresh_ptrHeaderTextAppearance = 10;
         /**
           <p>
           @attr description
@@ -678,7 +678,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrHeaderTextColor
         */
-        public static final int PullToRefresh_ptrHeaderTextColor = 2;
+        public static final int libPullToRefresh_ptrHeaderTextColor = 2;
         /**
           <p>
           @attr description
@@ -695,7 +695,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrListViewExtrasEnabled
         */
-        public static final int PullToRefresh_ptrListViewExtrasEnabled = 14;
+        public static final int libPullToRefresh_ptrListViewExtrasEnabled = 14;
         /**
           <p>
           @attr description
@@ -719,7 +719,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrMode
         */
-        public static final int PullToRefresh_ptrMode = 4;
+        public static final int libPullToRefresh_ptrMode = 4;
         /**
           <p>
           @attr description
@@ -732,7 +732,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrOverScroll
         */
-        public static final int PullToRefresh_ptrOverScroll = 9;
+        public static final int libPullToRefresh_ptrOverScroll = 9;
         /**
           <p>
           @attr description
@@ -746,7 +746,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrRefreshableViewBackground
         */
-        public static final int PullToRefresh_ptrRefreshableViewBackground = 0;
+        public static final int libPullToRefresh_ptrRefreshableViewBackground = 0;
         /**
           <p>
           @attr description
@@ -762,7 +762,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrRotateDrawableWhilePulling
         */
-        public static final int PullToRefresh_ptrRotateDrawableWhilePulling = 15;
+        public static final int libPullToRefresh_ptrRotateDrawableWhilePulling = 15;
         /**
           <p>
           @attr description
@@ -775,7 +775,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrScrollingWhileRefreshingEnabled
         */
-        public static final int PullToRefresh_ptrScrollingWhileRefreshingEnabled = 13;
+        public static final int libPullToRefresh_ptrScrollingWhileRefreshingEnabled = 13;
         /**
           <p>
           @attr description
@@ -788,7 +788,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrShowIndicator
         */
-        public static final int PullToRefresh_ptrShowIndicator = 5;
+        public static final int libPullToRefresh_ptrShowIndicator = 5;
         /**
           <p>
           @attr description
@@ -800,44 +800,44 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name org.libnetease.activity:ptrSubHeaderTextAppearance
         */
-        public static final int PullToRefresh_ptrSubHeaderTextAppearance = 11;
-        /** Attributes that can be used with a SlidingMenu.
+        public static final int libPullToRefresh_ptrSubHeaderTextAppearance = 11;
+        /** Attributes that can be used with a libSlidingMenu.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SlidingMenu_behindOffset org.libnetease.activity:behindOffset}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_behindScrollScale org.libnetease.activity:behindScrollScale}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_behindWidth org.libnetease.activity:behindWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_fadeDegree org.libnetease.activity:fadeDegree}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_fadeEnabled org.libnetease.activity:fadeEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_mode org.libnetease.activity:mode}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_selectorDrawable org.libnetease.activity:selectorDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_selectorEnabled org.libnetease.activity:selectorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_shadowDrawable org.libnetease.activity:shadowDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_shadowWidth org.libnetease.activity:shadowWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_touchModeAbove org.libnetease.activity:touchModeAbove}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_touchModeBehind org.libnetease.activity:touchModeBehind}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_viewAbove org.libnetease.activity:viewAbove}</code></td><td></td></tr>
-           <tr><td><code>{@link #SlidingMenu_viewBehind org.libnetease.activity:viewBehind}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_behindOffset org.libnetease.activity:behindOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_behindScrollScale org.libnetease.activity:behindScrollScale}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_behindWidth org.libnetease.activity:behindWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_fadeDegree org.libnetease.activity:fadeDegree}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_fadeEnabled org.libnetease.activity:fadeEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_mode org.libnetease.activity:mode}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_selectorDrawable org.libnetease.activity:selectorDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_selectorEnabled org.libnetease.activity:selectorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_shadowDrawable org.libnetease.activity:shadowDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_shadowWidth org.libnetease.activity:shadowWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_touchModeAbove org.libnetease.activity:touchModeAbove}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_touchModeBehind org.libnetease.activity:touchModeBehind}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_viewAbove org.libnetease.activity:viewAbove}</code></td><td></td></tr>
+           <tr><td><code>{@link #libSlidingMenu_viewBehind org.libnetease.activity:viewBehind}</code></td><td></td></tr>
            </table>
-           @see #SlidingMenu_behindOffset
-           @see #SlidingMenu_behindScrollScale
-           @see #SlidingMenu_behindWidth
-           @see #SlidingMenu_fadeDegree
-           @see #SlidingMenu_fadeEnabled
-           @see #SlidingMenu_mode
-           @see #SlidingMenu_selectorDrawable
-           @see #SlidingMenu_selectorEnabled
-           @see #SlidingMenu_shadowDrawable
-           @see #SlidingMenu_shadowWidth
-           @see #SlidingMenu_touchModeAbove
-           @see #SlidingMenu_touchModeBehind
-           @see #SlidingMenu_viewAbove
-           @see #SlidingMenu_viewBehind
+           @see #libSlidingMenu_behindOffset
+           @see #libSlidingMenu_behindScrollScale
+           @see #libSlidingMenu_behindWidth
+           @see #libSlidingMenu_fadeDegree
+           @see #libSlidingMenu_fadeEnabled
+           @see #libSlidingMenu_mode
+           @see #libSlidingMenu_selectorDrawable
+           @see #libSlidingMenu_selectorEnabled
+           @see #libSlidingMenu_shadowDrawable
+           @see #libSlidingMenu_shadowWidth
+           @see #libSlidingMenu_touchModeAbove
+           @see #libSlidingMenu_touchModeBehind
+           @see #libSlidingMenu_viewAbove
+           @see #libSlidingMenu_viewBehind
          */
-        public static final int[] SlidingMenu = {
+        public static final int[] libSlidingMenu = {
             0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016,
             0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a,
             0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e,
@@ -845,7 +845,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         };
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#behindOffset}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -858,10 +858,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name org.libnetease.activity:behindOffset
         */
-        public static final int SlidingMenu_behindOffset = 3;
+        public static final int libSlidingMenu_behindOffset = 3;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#behindScrollScale}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be a floating point value, such as "<code>1.2</code>".
@@ -872,10 +872,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name org.libnetease.activity:behindScrollScale
         */
-        public static final int SlidingMenu_behindScrollScale = 5;
+        public static final int libSlidingMenu_behindScrollScale = 5;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#behindWidth}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -888,10 +888,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name org.libnetease.activity:behindWidth
         */
-        public static final int SlidingMenu_behindWidth = 4;
+        public static final int libSlidingMenu_behindWidth = 4;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#fadeDegree}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be a floating point value, such as "<code>1.2</code>".
@@ -902,10 +902,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name org.libnetease.activity:fadeDegree
         */
-        public static final int SlidingMenu_fadeDegree = 11;
+        public static final int libSlidingMenu_fadeDegree = 11;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#fadeEnabled}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -916,10 +916,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name org.libnetease.activity:fadeEnabled
         */
-        public static final int SlidingMenu_fadeEnabled = 10;
+        public static final int libSlidingMenu_fadeEnabled = 10;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#mode}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -933,20 +933,20 @@ containing a value of this type.
 </table>
           @attr name org.libnetease.activity:mode
         */
-        public static final int SlidingMenu_mode = 0;
+        public static final int libSlidingMenu_mode = 0;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#selectorDrawable}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name org.libnetease.activity:selectorDrawable
         */
-        public static final int SlidingMenu_selectorDrawable = 13;
+        public static final int libSlidingMenu_selectorDrawable = 13;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#selectorEnabled}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -957,20 +957,20 @@ theme attribute (in the form
 containing a value of this type.
           @attr name org.libnetease.activity:selectorEnabled
         */
-        public static final int SlidingMenu_selectorEnabled = 12;
+        public static final int libSlidingMenu_selectorEnabled = 12;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#shadowDrawable}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name org.libnetease.activity:shadowDrawable
         */
-        public static final int SlidingMenu_shadowDrawable = 8;
+        public static final int libSlidingMenu_shadowDrawable = 8;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#shadowWidth}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -983,10 +983,10 @@ theme attribute (in the form
 containing a value of this type.
           @attr name org.libnetease.activity:shadowWidth
         */
-        public static final int SlidingMenu_shadowWidth = 9;
+        public static final int libSlidingMenu_shadowWidth = 9;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#touchModeAbove}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -1000,10 +1000,10 @@ containing a value of this type.
 </table>
           @attr name org.libnetease.activity:touchModeAbove
         */
-        public static final int SlidingMenu_touchModeAbove = 6;
+        public static final int libSlidingMenu_touchModeAbove = 6;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#touchModeBehind}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -1017,26 +1017,26 @@ containing a value of this type.
 </table>
           @attr name org.libnetease.activity:touchModeBehind
         */
-        public static final int SlidingMenu_touchModeBehind = 7;
+        public static final int libSlidingMenu_touchModeBehind = 7;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#viewAbove}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name org.libnetease.activity:viewAbove
         */
-        public static final int SlidingMenu_viewAbove = 1;
+        public static final int libSlidingMenu_viewAbove = 1;
         /**
           <p>This symbol is the offset where the {@link org.libnetease.activity.R.attr#viewBehind}
-          attribute's value can be found in the {@link #SlidingMenu} array.
+          attribute's value can be found in the {@link #libSlidingMenu} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name org.libnetease.activity:viewBehind
         */
-        public static final int SlidingMenu_viewBehind = 2;
+        public static final int libSlidingMenu_viewBehind = 2;
     };
 }

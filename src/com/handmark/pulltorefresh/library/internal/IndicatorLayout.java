@@ -51,7 +51,7 @@ public class IndicatorLayout extends FrameLayout implements AnimationListener {
 		Drawable arrowD = getResources().getDrawable(R.drawable.indicator_arrow);
 		mArrowImageView.setImageDrawable(arrowD);
 
-		final int padding = getResources().getDimensionPixelSize(R.dimen.indicator_internal_padding);
+		final int padding = getResources().getDimensionPixelSize(R.dimen.libindicator_internal_padding);
 		mArrowImageView.setPadding(padding, padding, padding, padding);
 		addView(mArrowImageView);
 

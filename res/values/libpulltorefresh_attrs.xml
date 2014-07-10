@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="PullToRefresh">
+    <declare-styleable name="libPullToRefresh">
 
         <!-- A drawable to use as the background of the Refreshable View -->
         <attr name="ptrRefreshableViewBackground" format="reference|color" />

@@ -390,7 +390,7 @@ public class CustomViewBehind extends ViewGroup {
 	public void drawSelector(View content, Canvas canvas, float openPercent) {
 		if (!mSelectorEnabled) return;
 		if (mSelectorDrawable != null && mSelectedView != null) {
-			String tag = (String) mSelectedView.getTag(R.id.selected_view);
+			String tag = (String) mSelectedView.getTag(R.id.libselected_view);
 			if (tag.equals(TAG+"SelectedView")) {
 				canvas.save();
 				int left, right, offset;
@@ -417,12 +417,12 @@ public class CustomViewBehind extends ViewGroup {
 
 	public void setSelectedView(View v) {
 		if (mSelectedView != null) {
-			mSelectedView.setTag(R.id.selected_view, null);
+			mSelectedView.setTag(R.id.libselected_view, null);
 			mSelectedView = null;
 		}
 		if (v != null && v.getParent() != null) {
 			mSelectedView = v;
-			mSelectedView.setTag(R.id.selected_view, TAG+"SelectedView");
+			mSelectedView.setTag(R.id.libselected_view, TAG+"SelectedView");
 			invalidate();
 		}
 	}

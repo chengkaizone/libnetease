@@ -57,7 +57,7 @@ public class PullToRefreshScrollView extends PullToRefreshBase<ScrollView> {
 			scrollView = new ScrollView(context, attrs);
 		}
 
-		scrollView.setId(R.id.scrollview);
+		scrollView.setId(R.id.libscrollview);
 		return scrollView;
 	}
 
